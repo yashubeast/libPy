@@ -3,8 +3,8 @@ from discord import app_commands
 
 class Checks:
 
-  def __init__(self):
-    self.superusers: set[int] | None = None
+  def __init__(self, superusers: set[int] | None = None):
+    self.superusers: set[int] | None = superusers
 
   @staticmethod
   def admin():
